@@ -1,3 +1,5 @@
+# Zadanie 2 
+
 Które z następujących problemów można uznać za mieszczące się w zakresie sztucznej
 inteligencji:
 - streszczanie tekstu TAK,
