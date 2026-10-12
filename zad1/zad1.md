@@ -1,4 +1,4 @@
-# Zadanie 1 odpowiedz
+# Zadanie 1 
 
 Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
 - wypełnianie deklaracji PIT nie, jest to schematyczne 
