@@ -1,12 +1,12 @@
 # Zadanie 1 odpowiedz
 
 Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
-- wypełnianie deklaracji PIT, 
-- streszczanie tekstu,
-- tłumaczenie tekstu,
+- wypełnianie deklaracji PIT nie, jest to schematyczne 
+- streszczanie tekstu, nie
+- tłumaczenie tekstu, 
 - klasyfikacja tekstu do kategorii tematycznych,
-- odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim),
-- układanie rozkładu jazdy transportu miejskiego,
+- odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim), nie
+- układanie rozkładu jazdy transportu miejskiego, nie, operowanie na danych
 - programowanie (pisanie programów komputerowych),
 - „programowanie” kanałów telewizyjnych,
 - testowanie oprogramowania,
