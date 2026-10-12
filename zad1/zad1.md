@@ -1,10 +1,16 @@
 # Zadanie 1 odpowiedz
 
-Zadania wymagajace inteligencji od czlowieka: 
+Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
+- wypełnianie deklaracji PIT, 
+- streszczanie tekstu,
+- tłumaczenie tekstu,
+- klasyfikacja tekstu do kategorii tematycznych,
+- odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim),
+- układanie rozkładu jazdy transportu miejskiego,
 - programowanie (pisanie programów komputerowych),
 - „programowanie” kanałów telewizyjnych,
-- testowanie oprogramowania, sa to zlozone zadania ktore wymagaja konkretnych umiejetnosci
-- komponowanie muzyki,
+- testowanie oprogramowania,
+- komponowanie muzyki tak, AI nie jest w stanie tworzyc muzyki, bo nie ma  takiego zrozumienia do melodii... jak ludzie
 - rozwiązywanie układów równań,
 - symboliczne obliczanie pochodnych funkcji,
 - symboliczne całkowanie funkcji,
