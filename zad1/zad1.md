@@ -14,4 +14,4 @@ Które z następujących zadań wymagają w Twojej opinii inteligencji od człow
 - rozwiązywanie układów równań tak,
 - symboliczne obliczanie pochodnych funkcji tak,
 - symboliczne całkowanie funkcji tak, wymaga to rozumienia symboli, zasad itp.
-- kierowanie samochodem.
+- kierowanie samochodem nie
