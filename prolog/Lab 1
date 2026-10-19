@@ -1,1 +1,22 @@
+Zadanie 1
+L1.Cw1.1 · Podstawowe. Sprawdź, czy katalog zawiera jabłko: owoc(jablko) - true
+L1.Cw1.2 · Podstawowe. Czy w katalogu jest marchew? Wykonaj owoc(marchew) - false
+L1.Cw1.3 · Dodatkowe. Wypisz wszystkie owoce jedną zmienną i użyj Next. X = jablko; X = gruszka; X = sliwka
+L1.Cw1.4 · Dodatkowe. Sprawdź, czy istnieje przynajmniej jeden owoc, nie wypisując jego nazwy. 
+L1.Cw1.5 · Dodatkowe. Dodaj owoc(wisnia). do grupy owoc/1. Ile wyników teraz zwróci owoc(X).? Cztery: jablko, gruszka, sliwka, wisnia.
+
+Zadanie 2
+L1.Cw2.3 · Dodatkowe. Porównaj owoc(x). i owoc(X). Dlaczego zachowują się inaczej? x to atom - wyświetla się false, X to zmienna, wyświetla wszystkie zmienne
+
+Zadanie 3
+L1.Cw3.1 · Podstawowe. Czy według uproszczonej bazy jabłko jest jadalne? Skąd bierze się wynik? tak, jadalne(X) przypisane jest do wszystkich owoców
+L1.Cw3.2 · Podstawowe. Wypisz wszystkie obiekty zaklasyfikowane przez regułę jako jadalne. jablko, gruszka, sliwka 
+L1.Cw3.3 · Dodatkowe. Sklep chce polecać tylko sezonowe owoce. Napisz regułę łączącą owoc/1 i sezonowy/1. owoc(X), sezonowy(X)
+L1.Cw3.4 · Dodatkowe. Sprawdź, czy w odczycie nazwa i natężenie są zgodne z oczekiwaniami. Użyj dwóch
+unifikacji.
+L1.Cw3.5 · Dodatkowe. Katalog produktów zawiera owoce LUB warzywa. Wypisz oba rodzaje jednym zapytaniem.
+
+        
+
+
 
