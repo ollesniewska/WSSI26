@@ -36,9 +36,14 @@ osoba X występuje dwukrotnie?
 L2.Cw5.1 PODSTAWOWE. Znajdź pary, w których X unika Y, ale nie ma dowodu, że Y unika X. - query: unika(X,Y), \+ unika(Y,X). wynik: X = dawid, Y = bartek
 L2.Cw5.2 PODSTAWOWE. Znajdź osoby inne niż Ania, które nie mają w bazie potwierdzenia, że lubią Anię. - query: osoba(X), dif(X,ania), \+ lubi(X, ania). wynik: X = dawid, X = ewa
 Najpierw osoba(X), dif(X,ania), następnie negacja.
-L2.Cw5.3 DODATKOWE. Zdefiniuj loves(X,Y) :- kocha(X,Y), kocha(Y,X). Wypisz wszystkie skierowane pary.
+L2.Cw5.3 DODATKOWE. Zdefiniuj loves(X,Y) :- kocha(X,Y), kocha(Y,X). Wypisz wszystkie skierowane pary. wynik: X = ania, Y = bartek, X = bartek, Y = ania, X = celina, Y = dawid, X = dawid, Y = celina, X = ewa, Y = filip, X = filip, Y = ewa
 L2.Cw5.4 DODATKOWE. Bez wcześniejszych zadań dopisz loves(X,Y) :- kocha(X,Y), kocha(Y,X). oraz
 inna_milosc(X,Y) :- kocha(X,Z), dif(Z,Y). Zdefiniuj true_love/2: obie osoby kochają się wzajemnie i żadna
-nie kocha osoby innej niż partner. Uczucia osób trzecich do tej pary pomijamy.
+nie kocha osoby innej niż partner. Uczucia osób trzecich do tej pary pomijamy. BAZA: loves(X,Y) :- kocha(X,Y), kocha(Y,X).
+inna_milosc(X,Y) :- kocha(X,Z), dif(Z,Y). 
+true_love(X,Y) :- loves(X,Y), \+ inna_milosc(X,Y), \+ inna_milosc(Y,X). QUERY: true_love(X,Y). wynik: X = ania, Y = bartek
+X = bartek, Y = ania
+X = ewa, Y = filip
+X = filip, Y = ewa
 L2.Cw5.5 DODATKOWE. Porównaj unika(ania,bartek). oraz \+ unika(ania,bartek). Czy drugi sukces dowodzi
 rzeczywistego braku unikania?
