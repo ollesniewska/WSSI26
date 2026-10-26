@@ -1,1 +1,44 @@
+L2.Cw1.1 PODSTAWOWE. Sprawdź ground(para(tom,reks)). Czy fakty para/2 są potrzebne? - wynik: true 
+L2.Cw1.2 PODSTAWOWE. Porównaj ground(para(X,X)). i ground(para(tom,tom)). Wyjaśnij rozbieżność. - pierwsze: false, drugie: true, ponieważ w pierwszym zmienne nieokreslone??
+L2.Cw1.3 DODATKOWE. Wykonaj Dane = ksiazka(hobbit,tolkien), ground(posiada(anna,Dane)). Co dzieje
+się z Dane? - wynik: Dane = ksiazka(hobbit,tolkien)
+L2.Cw1.4 DODATKOWE. Porównaj ground(posiada(anna,ksiazka(hobbit,tolkien))). oraz
+ground(posiada(anna,ksiazka(hobbit,Autor))).
+L2.Cw1.5 DODATKOWE. Wyjaśnij, dlaczego ground(kot(reks)). zwraca true bez faktu kot(reks).
 
+L2.Cw2.1 PODSTAWOWE. Uruchom \+ pies(tom). i wyjaśnij wynik jako brak dowodu w tej bazie. - wynik: true, ponieważ w bazie nie ma pies(tom)
+L2.Cw2.2 PODSTAWOWE. Porównaj kot(tom). i \+ kot(tom). Kiedy negacja ma sukces? - wynik: pierwsze true, drugie false, ponieważ w bazie jest kot(tom), negacja odniosłaby sukces gdyby w bazie nie byłoby kot(tom) tylko np. kot(miau).
+L2.Cw2.3 DODATKOWE. Zdefiniuj nieznany_gatunek/1: zwierzę bez potwierdzonego faktu kot/1 ani pies/1. Kogo
+znajdziesz?
+L2.Cw2.4 DODATKOWE. Zdefiniuj niezależnie nie_pies(X) :- zwierze(X), \+ pies(X). i wypisz rozwiązania.
+L2.Cw2.5 DODATKOWE. Przywróć bazę i dodaj bezpośrednio pod kot(tom). fakt kot(reks). Dopisz regułę
+nie_kot(X) :- zwierze(X), \+ kot(X). Jakie wyniki zwróci nie_kot(X).?
+
+L2.Cw3.1 PODSTAWOWE. Uruchom osobno lubi(filip,ania). i lubi(ania,filip). Co to mówi o kierunku
+relacji? - wynik: pierwsze true, drugie false, to znaczy, że nw bazie jest, że filip lubi anie, ale ania nie lubie filipa
+L2.Cw3.2 PODSTAWOWE. Kto lubi Dawida? Odpowiedz zapytaniem ze zmienną Kto. - wynik: lubi(Kto,dawid).
+L2.Cw3.3 DODATKOWE. Znajdź pary (X,Y), dla których X jest kobietą, Y mężczyzną i X lubi Y.
+L2.Cw3.4 DODATKOWE. Wypisz skierowane pary (X,Y), w których X lubi Y oraz kocha Y. Zwróć uwagę na kolejność
+wyników.
+L2.Cw3.5 DODATKOWE. Porównaj osobno lubi(bartek,Y). i unika(bartek,Y). Dlaczego drugie kończy się false,
+mimo że pierwsze zwraca dwa wyniki?
+
+L2.Cw4.1 PODSTAWOWE. Zdefiniuj wzajemna_sympatia(X,Y) dla kobiety X i mężczyzny Y, którzy lubią się
+wzajemnie. Wypisz wszystkie pary. - w bazie: wzajemna_sympatia(X,Y) :- plec(X,kobieta), plec(Y,mezczyzna), lubi(X,Y), lubi(Y,X). , w query: wzajemna_sympatia(X,Y). , wynik: X = ania, Y = bartek, X = ewa, Y = filip
+L2.Cw4.2 PODSTAWOWE. Zdefiniuj nieprzyjazn(X,Y) dla dwóch osób, które wzajemnie się unikają. - w bazie: nieprzyjazn(X,Y) :- unika(X,Y), unika(Y,X). , w query: nieprzyjazn(X,Y). , wynik: X = celina, Y = filip, X = filip, Y = celina
+L2.Cw4.3 DODATKOWE. Zdefiniuj niby_przyjazn(X,Y): X lubi Y, lecz nie ma dowodu, że Y lubi X. Najpierw wybierz
+parę dodatnim celem, potem neguj.
+L2.Cw4.4 DODATKOWE. Zdefiniuj znajomy_znajomego(X,Z): ścieżka przez Y złożona z dwóch relacji lubienia, z
+warunkiem dif(X,Z). Wypisz osoby osiągalne dla Bartka.
+L2.Cw4.5 DODATKOWE. Sprawdź lubi(X,Y), lubi(X,Z), dif(Y,Z). Wypisz wszystkie X,Y,Z. Dlaczego każda
+osoba X występuje dwukrotnie?
+
+L2.Cw5.1 PODSTAWOWE. Znajdź pary, w których X unika Y, ale nie ma dowodu, że Y unika X. - query: unika(X,Y), \+ unika(Y,X). wynik: X = dawid, Y = bartek
+L2.Cw5.2 PODSTAWOWE. Znajdź osoby inne niż Ania, które nie mają w bazie potwierdzenia, że lubią Anię. - query: osoba(X), dif(X,ania), \+ lubi(X, ania). wynik: X = dawid, X = ewa
+Najpierw osoba(X), dif(X,ania), następnie negacja.
+L2.Cw5.3 DODATKOWE. Zdefiniuj loves(X,Y) :- kocha(X,Y), kocha(Y,X). Wypisz wszystkie skierowane pary.
+L2.Cw5.4 DODATKOWE. Bez wcześniejszych zadań dopisz loves(X,Y) :- kocha(X,Y), kocha(Y,X). oraz
+inna_milosc(X,Y) :- kocha(X,Z), dif(Z,Y). Zdefiniuj true_love/2: obie osoby kochają się wzajemnie i żadna
+nie kocha osoby innej niż partner. Uczucia osób trzecich do tej pary pomijamy.
+L2.Cw5.5 DODATKOWE. Porównaj unika(ania,bartek). oraz \+ unika(ania,bartek). Czy drugi sukces dowodzi
+rzeczywistego braku unikania?
